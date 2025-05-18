@@ -1,0 +1,5 @@
+id_tipo,descripcion,capacidad,precio_base
+1,Sencilla,1,30
+2,Doble,2,50
+3,Superior,4,90
+4,Deluxe,6,200

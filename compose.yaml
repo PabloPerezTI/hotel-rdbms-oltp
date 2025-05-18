@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: postgresRDBMS
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: user
+      POSTGRES_DB: postgresRDBMS
+    ports:
+      - "5432:5432"
+    volumes:
+      - dataPostgres:/var/lib/postgresql/data
+volumes:
+  dataPostgres:
