@@ -11,7 +11,7 @@ Incluye la simulación de datos, consultas SQL analíticas y creación de vistas
 - Insertar datos simulados en cada tabla (huespedes, reservas, habitaciones, servicios...).
 - Crear consultas SQL para responder a preguntas reales de negocio.
 - Generar vistas reutilizables que faciliten el análisis.
-- Imitar buenas prácticas de trabajo en entornos reales de ingeniería y análisis de datos.
+- Implantar buenas prácticas de trabajo en entornos reales de ingeniería y análisis de datos.
 
 ---
 
@@ -23,7 +23,7 @@ El modelo está compuesto por las siguientes entidades:
 - `habitaciones`: habitaciones disponibles en el hotel.
 - `tipos_habitacion`: categoría, capacidad y precio base.
 - `reservas`: registro de reservas realizadas.
-- `servicios`: servicios adicionales ofrecidos.
+- `tipos_servicios`: servicios adicionales ofrecidos.
 - `reserva_servicio`: asociación entre reservas y servicios consumidos.
 
 El modelo ha sido diseñado respetando la Tercera Forma Normal para evitar redundancias y garantizar integridad referencial.
@@ -38,32 +38,22 @@ En la carpeta `views/` se encuentran varias vistas SQL que permiten responder a 
 - ¿Qué porcentaje de ocupación tiene el hotel por mes?
 - ¿Qué servicio genera más ingresos?
 - ¿Cuál es el ticket medio por reserva?
-- ¿Qué tipo de habitación es el más demandado?
 - ¿Qué nacionalidades visitan más el hotel?
 
 ---
 
 ## 🛠️ Herramientas utilizadas
 
-- `PostgreSQL` (o cualquier otro RDBMS)
+- `PostgreSQL` 
 - `dbdiagram.io` para el diseño visual del modelo
 - `SQL` para consultas, vistas y generación de insights
-- `CSV` como fuente de datos falsa
-
----
-
-## 🚀 Cómo ejecutar el proyecto
-
-1. Crea las tablas ejecutando los scripts en `database/ddl/`.
-2. Carga los datos manualmente o desde los CSV ubicados en `data/`.
-3. Ejecuta las vistas desde `database/views/`.
-4. Empieza a explorar los datos mediante consultas propias o dashboards.
+- `Mockaroo` para la generación de fake data
 
 ---
 
 ## 📸 Diagrama del modelo relacional
 
-(docs/modelo_relacional.png)
+![ModeloLogicoRelacional](https://github.com/user-attachments/assets/73c4b79b-85c9-4b20-a649-6bc44633b286)
 
 ---
 
